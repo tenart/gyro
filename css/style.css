@@ -53,8 +53,29 @@ body {
 }
 
 .ui-needle {
-	height: 5px;
+	height: 14px;
     width: 150px;
-    background: red;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: calc(50% - 7px);
+    transform: translateX(75px);
+    -webkit-mask-type: alpha;
+    -webkit-mask-image: url(../img/needle.png);
+    -webkit-mask-size: 100%;
+    transition: transform 1s;
 }
 
+#ui-needle-x {
+	transform: rotate(-45deg) translateX(75px);
+    background: #ff3611;
+}
+
+#ui-needle-y {
+	transform: rotate(66deg) translateX(75px);
+    background: #82ff3f;
+}
+
+#ui-needle-z {
+	transform: rotate(-150deg) translateX(75px);
+    background: #3f4eff;
+}
