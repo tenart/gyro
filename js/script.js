@@ -8,7 +8,10 @@ function degToRad( degrees ) {
 };
 
 function rotateNeedle(needle, degrees) {
-    needle.css("transform: rotate(" + degrees + "deg) translateX(75px);")
+    if (degrees == NaN) {
+        degrees = 0;
+    }
+    needle.css("transform", "rotate(" + degrees + "deg) translateX(75px);")
 }
 
 window.addEventListener("deviceorientation", motion);
