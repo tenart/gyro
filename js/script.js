@@ -11,7 +11,9 @@ function rotateNeedle(needle, degrees) {
     needle.css("transform: rotate(" + degrees + "deg) translateX(75px);")
 }
 
-window.addEventListener("deviceorientation", function( event ) {
+window.addEventListener("deviceorientation", motion);
+
+function motion(event){
     x = event.beta;
     y = event.gamma;
     z = event.alpha;
@@ -19,4 +21,6 @@ window.addEventListener("deviceorientation", function( event ) {
     rotateNeedle($("#ui-needle-x"), x);
     rotateNeedle($("#ui-needle-y"), y);
     rotateNeedle($("#ui-needle-z"), z);
-});
+}
+
+setInterval(motion, 1);
