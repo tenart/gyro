@@ -1,0 +1,60 @@
+body {
+    background: #323639;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+#main-wrapper {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+}
+
+#ui-gauge {
+	height: 300px;
+    width: 300px;
+    position: absolute;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+#ui-ring-x {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 1px dashed #ff3611;
+    border-radius: 100%;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+}
+
+#ui-ring-y {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border: 1px dashed #82ff3f;
+    border-radius: 100%;
+    left: calc(50% - 85px);
+    top: calc(50% - 85px);
+}
+
+#ui-ring-z {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border: 1px dashed #3f4eff;
+    border-radius: 100%;
+    left: calc(50% - 70px);
+    top: calc(50% - 70px);
+}
+
+.ui-needle {
+	height: 5px;
+    width: 150px;
+    background: red;
+}
+
