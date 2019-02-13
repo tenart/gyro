@@ -79,3 +79,19 @@ body {
 	transform: rotate(-150deg) translateX(75px);
     background: #3f4eff;
 }
+
+#debug {
+    background: black;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: monospace;
+}
+
+

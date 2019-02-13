@@ -1,5 +1,3 @@
-alert("hello world");
-
 var x;
 var y;
 var z;
@@ -20,6 +18,10 @@ function motion(event){
     x = event.beta;
     y = event.gamma;
     z = event.alpha;
+    
+    $("#x").text("X: " + x);
+    $("#y").text("Y: " + y);
+    $("#z").text("Z: " + z);
     
     rotateNeedle($("#ui-needle-x"), x);
     rotateNeedle($("#ui-needle-y"), y);
