@@ -1,3 +1,5 @@
+alert("hello world");
+
 var x;
 var y;
 var z;
