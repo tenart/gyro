@@ -9,7 +9,7 @@ $(function() {
     };
 
     function rotateNeedle( needle, degrees ) {
-        $(needle).css( "transform", "rotate(" + degrees + "deg) translateX(75px);" )
+        needle.css( "transform", "rotate(" + degrees + "deg) translateX(75px)" )
     }
 
     function motion( event ) {
@@ -21,10 +21,10 @@ $(function() {
         $("#y").text( "Y: " + y );
         $("#z").text( "Z: " + z );
 
-        rotateNeedle( "#ui-needle-x", x );
-        rotateNeedle( "#ui-needle-y", y );
-        rotateNeedle( "#ui-needle-z", z );
+        rotateNeedle( $("#ui-needle-x"), x );
+        rotateNeedle( $("#ui-needle-y"), y );
+        rotateNeedle( $("#ui-needle-z"), z );
     }
 
-    window.addEventListener( "deviceorientation", motion );
+    window.addEventListener( "deviceorientation", motion );  
 })
